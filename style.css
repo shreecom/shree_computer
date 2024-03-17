@@ -1,0 +1,548 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+#nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #333;
+    color:orange;
+    width: 100%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: fixed;
+    z-index: 2;
+}
+
+h2{
+    font-family:cursive;
+    padding: 5px 4px;
+}
+.topnav {
+    /* overflow: hidden; */
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+     float: left;
+     color: #f3e8e8;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: orange;
+    color: black;
+  }
+  #container{
+    
+    height: 460px;
+    display:flex;
+    justify-content: space-between;
+    padding: 30px;
+    background:linear-gradient(white,rgb(219, 231, 173));
+    background-image: url(https://static.vecteezy.com/system/resources/previews/009/880/293/non_2x/cloud-with-blue-sky-background-illustration-cloudscape-layers-3d-paper-cut-style-with-copy-space-for-text-horizontal-banner-for-spring-sale-or-summertime-season-vector.jpg);
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  }
+  #container .name{
+    padding:70px;
+    margin-top: 10px;
+    height: 150px;
+    width: 400px;
+    }
+  #container h1{
+    color:rgb(6, 105, 105);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 34px;
+    padding-bottom: 50px;
+  }
+  #container .img-box img{
+    height: 130px;
+    width: 130px;
+    padding: 70px;
+  }
+  .regitration a {
+  font-size: 22px;
+  background: orange;
+  /* border-radius: 20px; */
+  text-decoration: none;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 10px;
+  /* margin-top: 100px; */
+  transition: 1s ease;
+  color: black;
+}
+.regitration a:hover{
+  background:rgb(59, 179, 226);
+  color: #792a05;
+}
+
+/* 
+image slider */
+
+#sliderBox{
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(133, 117, 117);
+ width: 400px;
+ height: 300px;
+ overflow: hidden;
+ position: relative; 
+ /* padding: 10px; */
+}
+#slider{
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+ box-shadow: 0px 0px 10px 1px rgb(133, 117, 117);
+ position: relative;
+}
+#slider img{
+  width: 100%;    
+  height: 100%;
+  display: none;
+}
+#slider .active{
+  display: block;
+}   
+#back,#next{
+  position: absolute;
+  top: 40%;
+  color: rgb(3, 27, 43);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  background-color:rgb(250, 227, 24);
+  transition: all 0.5s;
+}
+#back{
+  left: 3px;  
+}
+#next{
+  right: 3px;
+}  
+.fa-sharp{
+  font-size: 20px;
+}
+#back:hover,#next:hover{
+  opacity: 1;
+  cursor: pointer;
+  background-color: aquamarine;
+}
+
+
+  /* features */
+  #features{
+    padding: 3vw 8vw 3vw 8vw;
+    text-align: center;
+    /* background: #faecec; */
+  }
+  #features .features-name{
+    display: flex;
+    justify-content: space-around;
+    /* padding: 10px; */
+    
+ }
+ 
+ #features h2{
+  color: rgb(10, 83, 94);
+  padding: 14px;
+  font-size: 28px;
+ }
+ .features-name h3{
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .features-name h4{
+  padding: 10px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ #features .features-name p{
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+ margin-top: 10px;
+ }
+ .course-mode{
+  background: rgb(224, 200, 118);
+  width: 300px;
+  height: 150px;
+  padding: 10px;
+ }
+ .cerificate{
+  background: rgb(224, 200, 118);
+  width: 300px;
+  height: 150px;
+  padding: 10px;
+ }
+  /* courses */
+  h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+  }
+  #courses{
+    background: linear-gradient(rgb(226, 208, 208),pink,rgb(171, 187, 171));
+    /* margin-top: 10px; */
+    padding: 3vw 8vw 0 8vw;
+    text-align: center;
+  }
+  #courses h2{
+    color: rgb(9, 82, 82);
+    font-size: 27px;
+  }
+  #courses .course-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 1.6rem;
+    margin-top: 50px;
+   
+  }
+  #courses .course-details h3{
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: 'Courier New', Courier, monospace;
+  }
+  #courses .course-details{
+    text-align: start;
+height: 100%;
+
+  }
+  #courses .course-details img{
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+  }
+  #courses .course-details img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+   
+
+#btnpannel{
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  justify-content: space-around;
+  padding: 20px;  
+  background: #faf8d7;
+}
+#btnpannel .all_login{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 20px;  
+  margin: 20px;
+}
+#btnpannel .all_login a{
+  text-decoration: none;
+  width: 300px;
+  height: 40px;
+  padding: 5px;
+  font-size: 23px;
+  color:white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition: 1s ease;
+  cursor: pointer;
+}
+#btnpannel .all_login a:hover{
+background-color: rgb(20, 168, 168);
+}
+.all_login .registration_btn{
+  background: rgb(235, 83, 28);
+}
+.all_login .admision_btn{
+margin-top: 22px;
+background:blueviolet;
+}
+.all_login .login_btn{
+  margin-top: 22px;
+  background: #860861;
+}
+  .image-box img{
+    height: 230px;
+    width: 250px;
+    
+    border-style:outset;
+  }
+  #img2{
+    position: relative;
+    right: 170px;
+  }
+  
+
+  /* footer */
+  #footer{
+    background: #333;
+    height: 250px;
+    color: #ddcbcb;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+  }
+ #footer h4{
+  color:rgb(235, 187, 99);
+    font-family: "Rubik", sans-serif; 
+    font-size: 21px;
+  }
+ #footer img{
+  height: 30px;
+  width: 30px;
+  padding: 8px;
+  transition: 1s ease;
+ }
+ #footer img:hover{
+  background-color: #d2dee9;
+  cursor: pointer;
+ }
+ .icons{
+  margin-top: 20px;
+ }
+
+ /* courses page */
+ #home{
+  height: 350px;
+  width: 100%;
+  background-image: url("https://th.bing.com/th/id/R.6e5d97677f916db44d66ba3ffcb53d91?rik=4ad%2f5%2bavQ84GGg&riu=http%3a%2f%2fbytesofgigabytes.com%2fIMAGES%2fcourse%2fcoursrail.png&ehk=To%2b%2bvoXrpjs7iN0Sj6gZbqc1wT4s3ueeZzqYCf3lf%2fc%3d&risl=&pid=ImgRaw&r=0");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:orange;
+ }
+ #details{
+  background: rgb(233, 230, 187);
+  /* padding: 20px; */
+ }
+ #details .addbtn a{
+  text-decoration: none;
+  font-size: 25px;  
+  color:#e4ee89;
+  font-family: cursive;
+ }
+ #details .addbtn a:hover{
+  color: #bedefc;
+  font-size: 27px;
+  
+ }
+ #details #home .addbtn{
+  background: #7a0640;
+  text-align: center;
+  width: 220px;
+  padding: 5px;
+  position: absolute;
+  top: 300px;
+  left: 280px;
+ }
+ .course-info{
+  display: flex;  
+  justify-content: space-around;
+  padding-top: 50px;
+ }
+ .course-info img{
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  border: 1px solid black;
+ }
+ .course-info .info{
+  padding-top: 5px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+ }
+ .course-info .info h4{
+  padding-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .seemore{
+  text-align: center;
+ }
+ #see{
+  font-size: 20px;
+  font-weight: bolder;
+  background: rgb(5, 71, 57);
+  color: #ddcbcb;
+  height: 40px;
+  width: 200px;
+  border: none;
+  transition: 1s ease;
+  border-radius: 5px;
+ }
+ #see:hover{
+  background: rgb(182, 122, 11);
+  color: black;
+ }
+#hide{
+  display: none;
+}
+.info p{
+    padding: 6px;
+}
+/* admission form */
+#formBox{
+  background: #dfe5a2;
+  color: #7a0640;
+  font-weight: 200;
+  font-size: 20px;
+  text-align: center;
+  padding: 30px;
+}
+.admision form{
+  width: 700px;
+  height: 700px;
+  background: rgb(190, 230, 224);
+  text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+}
+.admision form input{
+  width: 340px;
+}
+
+#gender{
+ height: 20px;
+ width: 20px;
+}
+table td{
+  /* border: 1px solid gray; */
+  width: 200px;
+  height: 30px;
+  font-size: 20px;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#formBox #add{
+  width: 340px;
+}
+#formBox #submit{
+  height: 40px; 
+  background:teal;
+  font-size: 24px;
+  font-weight:bold;
+}
+#formBox #cancel{
+  
+  height: 40px; 
+  background:teal;
+  font-size: 24px;
+  font-weight:bold;
+  
+}
+
+/* aboutus page */
+#aboutBox{
+  background-image: url(https://static.vecteezy.com/system/resources/previews/009/880/293/non_2x/cloud-with-blue-sky-background-illustration-cloudscape-layers-3d-paper-cut-style-with-copy-space-for-text-horizontal-banner-for-spring-sale-or-summertime-season-vector.jpg);
+  background-size: cover;
+  height: 600px;
+  box-shadow: 0px 0px 10px 1px rgb(133, 117, 117);
+}
+#aboutBox .namePlate h1{ 
+  padding: 20px;
+  font-family:'Times New Roman', Times, serif;  
+  font-size: 32px;
+  color:teal;
+}
+#aboutHome .aboutClass p{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 600px;
+  padding: 20px;
+  text-align: justify;  
+}
+#aboutHome{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.imgBox img{
+  width: 200px;
+  height: 200px;
+  animation: anim 4s ease;
+}
+.aboutClass h3{
+  color:rgb(9, 141, 185);
+  font-family: Arial, Helvetica, sans-serif;
+}
+#autorised{
+  background: rgb(215, 233, 227) ;
+  padding: 23px;
+  line-height: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#autorised h4{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#addressBox{
+  height: auto;
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #e7eaec;
+  box-shadow: 0px 0px 10px 1px rgb(204, 187, 187);
+}
+#addressBox .add{
+padding: 20px;
+line-height: 30px;
+background-color:rgb(72, 209, 209);
+background-color:rgb(184, 231, 231);
+width: 300px;
+}
+p{
+  font-size: 20px;
+}
+.socaiMedia{
+  margin-top: 15px;
+  padding: 20px;
+line-height: 30px;
+background-color:rgb(184, 231, 231);
+width: 300px;
+}
+.aboutImg img{
+  height: 250px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.aboutImg{
+/* padding-left: 20px; */
+display: flex ;
+flex-direction:column;
+}
+.aboutImg .img2{
+position: relative;
+left: 200px;
+/* top: 20px; */
+}
+.aboutImg .img3{  
+margin: 10px;
+height: 230px;
+}
+@keyframes anim {
+  0%{
+   transform: scale(0); 
+  }
+  25%{
+    transform:translateY(150px)
+  }
+  50%{
+    transform: scale(0.3);
+  }
+  100%{
+    
+  }
+}
+
